@@ -12,7 +12,7 @@ function CardSlider({ genre, name, type }) {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhNTc0YTc3YzNlZGY4MzIyYzZjOTc3NTZiZmM4MTYyNiIsInN1YiI6IjYxOTNhYmI3NzVmMWFkMDAyOWQ4ZTQwYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.C0Ty_kJTEsHH9tXTCVhbNPrLpfWbRjwpeDwU6_lBm08'
+      Authorization: 'API Key'
     }
   }
 
