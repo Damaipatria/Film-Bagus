@@ -136,9 +136,9 @@ function Beranda() {
       {/* Pricing */}
       <div className="py-5 dark:bg-gray-950">
         <h1 className="mb-3 font-bold text-center text-3xl dark:text-gray-200">Pilih Paket Berlanggan <br /> Sesuai Kebutuhan</h1>
-        <p className="mb-7 text-center text-lg dark:text-gray-200">Pilihlah paket menarik dibawah ini sesuai dengan kebutuhan anda</p>
+        <p className=" text-center text-lg dark:text-gray-200">Pilihlah paket menarik dibawah ini sesuai dengan kebutuhan anda</p>
         {/* Pricing plan */}
-        <div className="flex flex-wrap justify-center xl:px-20 xl:py-5">
+        <div className="flex flex-wrap justify-center lg:gap-0 gap-6 xl:px-20 xl:py-7 py-5">
           <div className="basis-1/3 lg:basis-1/4 px-5 lg:px-3">
             <div className="h-full py-5 px-2 bg-gray-50 rounded-lg hover:scale-105 hover:shadow-md transition duration-100 dark:bg-slate-900 dark:text-gray-200">
               <div className="px-6">
@@ -422,11 +422,11 @@ function MovieAndSelectedGenre() {
           </button>
         </div >
         {/* Movie From Selected Genre */}
-        <div className="flex flex-wrap justify-center xl:gap-3 lg:gap-7 md:gap-5 gap-y-5 xl:mx-4 lg:mx-10 md:mx-4 mx-10">
+        <div className="flex flex-wrap justify-center xl:gap-3 lg:gap-7 md:gap-5 gap-5 xl:mx-4 lg:mx-10 md:mx-4">
           {loading ? <div className="dark:text-gray-200">loading...</div> :
             movieSelected.slice(0, 6).map((item, index) => {
               return (
-                <div className="xl:basis-52 lg:basis-56 md:basis-52 basis-1/2 lg:h-84 md:h-80 h-64">
+                <div className="xl:basis-52 lg:basis-56 md:basis-52 basis-1/3 lg:h-84 md:h-80 h-68">
                   <Card data={item} key={index} />
                 </div>
               )
@@ -445,10 +445,10 @@ function BestSeris() {
       <div className="py-7 bg-gray-50 dark:bg-slate-950 dark:text-gray-200">
         <h1 className="mb-3 font-bold text-center text-3xl">Serial TV Paling Populer</h1>
         <p className="mb-5 text-center text-lg">Tak hanya terdapat film saja tetapi terdapat juga ribuat Serial TV <br /> berkualitas yang siap anda nikmati.</p>
-        <div className="flex flex-wrap justify-center gap-5 xl:px-20 lg:px-5 px-1">
+        <div className="flex flex-wrap lg:justify-center md:justify-start justify-center lg:gap-5 gap-5 xl:px-20 lg:px-5 md:px-7 px-3">
           {movie.trendingSeries.slice(0, 8).map((item, index) => {
             return (
-              <div className="basis-1/5 h-86">
+              <div className="lg:basis-1/5 md:basis-56 basis-1/3 md:h-84 h-68">
                 <Card data={item} key={index} />
               </div>
             )
@@ -458,4 +458,3 @@ function BestSeris() {
     </>
   )
 }
-

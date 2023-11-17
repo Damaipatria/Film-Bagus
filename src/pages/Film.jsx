@@ -83,17 +83,17 @@ function CarouselMovie() {
       <div className="dark:bg-slate-950">
         <hr className="h-px mx-5 m-auto border-0 bg-gray-200 dark:bg-gray-900" />
       </div>
-      <div className="flex justify-center items-center gap-3 px-3 pb-5 dark:bg-slate-950">
+      <div className="flex justify-center items-center md:gap-3 gap-2 md:px-3 px-1 pb-5 dark:bg-slate-950">
         <button onClick={prevSlide} className="dark:text-gray-200">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
             <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
           </svg>
         </button>
-        <div className="basis-5/6 grow flex overflow-hidden md:h-86 h-72">
+        <div className="basis-auto flex overflow-hidden md:h-86 h-72">
           {movie.trendingMovie.map((item, index) => {
             return (
               <>
-                <div key={index} className="xl:basis-1/6 lg:basis-1/4 md:basis-1/3 basis-40 grow-0 shrink-0 md:h-84 h-56 p-2 my-auto transition-transform duration-300" style={{ transform: `translateX(-${valueX * 100}%)` }}>
+                <div key={index} className="xl:basis-1/6 lg:basis-1/4 md:basis-1/3 basis-1/2 grow-0 shrink-0 md:h-84 h-68 p-2 my-auto transition-transform duration-300" style={{ transform: `translateX(-${valueX * 100}%)` }}>
                   <Card data={item} />
                 </div>
               </>
@@ -109,4 +109,3 @@ function CarouselMovie() {
     </>
   )
 }
-

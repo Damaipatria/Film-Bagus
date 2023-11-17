@@ -8,6 +8,8 @@ export default {
   theme: {
     extend: {
       spacing: {
+        '38': '9.5rem',
+        '68': '17rem',
         '84': '21rem',
         '86': '22rem',
       }
@@ -15,4 +17,3 @@ export default {
   },
   plugins: [],
 }
-

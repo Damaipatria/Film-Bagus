@@ -80,13 +80,13 @@ function Header() {
       <div className={`absolute w-full ${toggleMenu ? 'h-0' : 'h-fit'} z-10 lg:hidden overflow-hidden bg-white shadow-md dark:bg-gray-900 dark:text-white`}>
         <div className="md:mx-7 md:py-3 mx-5 font-medium border-b border-gray-200">
           <div className="py-2">
-            <Link to={'/'}>Beranda</Link>
+            <Link to={'/'} onClick={hanldeSetToggleMenu}>Beranda</Link>
           </div>
           <div className="py-2">
-            <Link to={'/film'}>Film</Link>
+            <Link to={'/film'} onClick={hanldeSetToggleMenu}>Film</Link>
           </div>
           <div className="py-2">
-            <Link to={'/series'}>Series</Link>
+            <Link to={'/series'} onClick={hanldeSetToggleMenu}>Series</Link>
           </div>
         </div>
         <div className="md:mx-7 mx-6 my-4 font-medium">
@@ -97,80 +97,6 @@ function Header() {
       </div>
     </>
   )
-  // return (
-  //   <>
-  //     <nav className=''>
-  //       <div className='flex justify-between items-center mx-5 lg:mx-12 py-2 lg:py-0'>
-  //         {/* logo/nama website */}
-  //         <div className='uppercase border-b-0 border-white lg:border-0'>
-  //           <span>film</span>
-  //           <span className='text-blue-600'>bagus</span>
-  //         </div>
-
-  //         {/* menu utama */}
-  //         <div className='lg:flex space-x-7 hidden'>
-  //           <div className='px-2 py-3'>
-  //             <a href="#">Beranda</a>
-  //           </div>
-  //           <div className='px-2 py-3'>
-  //             <a href="#">Film</a>
-  //           </div>
-  //           <div className='px-2 py-3'>
-  //             <a href="#">Series</a>
-  //           </div>
-  //           <div className='px-2 py-3'>
-  //             <a href="#">Tentang</a>
-  //           </div>
-  //         </div>
-
-  //         {/* masuk*/}
-  //         <div className='lg:block hidden'>
-  //           <a href="#login-page">
-  //             <button className='px-7 py-1 text-white bg-blue-600 rounded-lg hover:bg-blue-700 active:bg-blue-800'>
-  //               Masuk
-  //             </button>
-  //           </a>
-  //         </div>
-
-  //         {/* button menu mobile */}
-  //         <div className='flex items-center space-x-2 lg:hidden'>
-  //           <a href="#login-page">
-  //             <button className='px-7 py-1 text-white bg-blue-600 rounded-lg hover:bg-blue-700 active:bg-blue-800'>
-  //               Masuk
-  //             </button>
-  //           </a>
-  //           <button className='p-1 rounded-md hover:bg-gray-200' onClick={() => setToggle(!toggle)}>
-  //             {toggle ? (
-  //               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 text-blue-600">
-  //                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-  //               </svg>
-  //             ) : (
-  //               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 text-blue-600">
-  //                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-  //               </svg>
-  //             )}
-  //           </button>
-  //         </div>
-  //       </div>
-
-  //       {/* menu mobile */}
-  //       <div className={`lg:hidden ${toggle ? ('hidden') : ('')}`}>
-  //         <a href="#" className=''>
-  //           <div className='my-1 px-4 py-2 text-blue-700 bg-blue-50 border-l-4 border-blue-600'>Beranda</div>
-  //         </a>
-  //         <a href="#" className=''>
-  //           <div className='my-1 px-4 py-2 text-gray-800 border-l-4 border-white hover:text-black hover:border-gray-400 hover:bg-gray-100'>Film</div>
-  //         </a>
-  //         <a href="#" className=''>
-  //           <div className='my-1 px-4 py-2 text-gray-800 border-l-4 border-white hover:text-black hover:border-gray-400 hover:bg-gray-100'>Serial TV</div>
-  //         </a>
-  //         <a href="#" className=''>
-  //           <div className='my-1 px-4 py-2 text-gray-800 border-l-4 border-white hover:text-black hover:border-gray-400 hover:bg-gray-100'>Harga</div>
-  //         </a>
-  //       </div>
-  //     </nav >
-  //   </>
-  // );
 }
 
 export default Header;
