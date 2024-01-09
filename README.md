@@ -5,3 +5,4 @@ Pada project ini saya belajar dan lebih memahami tentang react useContext dan ba
 Project ini juga menggunakan asset gratis dari berbagai situs, diantaranya :
 - [TMBD](https://www.pexels.com/) untuk API yang digunakan.
 - [Flaticon](https://www.flaticon.com/free-icons/letter-d) untuk favicon.
+- [FILMBAGUS](https://film-bagus.vercel.app/) untuk melihat demo.
